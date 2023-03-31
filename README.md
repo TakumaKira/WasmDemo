@@ -4,7 +4,7 @@ This repository is a tryout for a video tutorial: [What is WebAssembly? And what
 
 ## Requirements
 
-You need to [install Emscripten](https://emscripten.org/docs/getting_started/downloads.html) to run `emcc` command(`.wasm` file builder).
+You need to [install and setup Emscripten](https://emscripten.org/docs/getting_started/downloads.html) to run `emcc` command(`.wasm` file builder).
 
 ## How to build
 
@@ -12,10 +12,16 @@ You need to [install Emscripten](https://emscripten.org/docs/getting_started/dow
 
 ### For browsers
 
-Run:
+Run for C:
 
 ```sh
 emcc helloworld.c -o helloworld.html
+```
+
+Run for C++:
+
+```sh
+em++ helloworld.cpp -o helloworld.html
 ```
 
 Then access `./helloworld.html` from local web server.
